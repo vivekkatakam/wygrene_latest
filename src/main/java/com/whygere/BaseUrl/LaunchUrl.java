@@ -11,7 +11,7 @@ public class LaunchUrl {
 
 	WebDriver driver;
 
-	String email = "ptggroup1501@gmail.com";
+	String email = "ptggroup1502@gmail.com";
 	protected String psw = "Welcome@123";
 
 	@Test
