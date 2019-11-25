@@ -3,8 +3,7 @@
 <suite name="Suite">
     <test name="Test">
         <classes>
-<!--            <class name="com.whygere.BaseUrl.LaunchUrl"/>-->
-            <class name="com.whygere.BaseUrl.LoginTest"/>
+            <class name="com.whygere.BaseUrl.LaunchUrl"/>
         </classes>
     </test> <!-- Test -->
 </suite>

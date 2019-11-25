@@ -35,7 +35,7 @@ public class Settings extends LaunchUrl {
 		driver.findElement(By.xpath("//input[@id='address']")).sendKeys("1890 Highland Parkway");
 		driver.findElement(By.xpath("//button[@class='btn btn-apply']")).click();
 		
-		System.out.println("User details updated succesfully");
+		System.out.println("User details updated successfully");
 		
 		//Screenshot after updating user details
 		EventFiringWebDriver we1=new EventFiringWebDriver(driver);
@@ -45,21 +45,18 @@ public class Settings extends LaunchUrl {
 		Thread.sleep(8000);
 		System.out.println("Screenshot after updating user details");
 
-		Login lgn = new Login(driver);
-		lgn.Logout();
-		driver.close();
 
 		//Calling change Password 
-//		changePassword(driver);
+		changePassword(driver);
 	}
 
 	public void changePassword(WebDriver driver) throws Exception {
 
 		driver.findElement(By.xpath("//li[9]//a[1]")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'Change Password')]")).click();
-		driver.findElement(By.xpath("//input[@id='current']")).sendKeys("Ptg@1234");
-		driver.findElement(By.xpath("//input[@id='newPassword']")).sendKeys("Welcome@1234");
-		driver.findElement(By.xpath("//input[@id='confirm']")).sendKeys("Welcome@1234");
+		driver.findElement(By.xpath("//input[@id='current']")).sendKeys(psw);
+		driver.findElement(By.xpath("//input[@id='newPassword']")).sendKeys("Ptg@1234");
+		driver.findElement(By.xpath("//input[@id='confirm']")).sendKeys("Ptg@1234");
 		driver.findElement(By.xpath("//button[@class='btn btn-apply']")).click();
 		Thread.sleep(5000);
 		System.out.println("Password changed successfully");
@@ -75,8 +72,9 @@ public class Settings extends LaunchUrl {
 		System.out.println("Enter into settings page");
 		
 		// Logout method calling
-//		Login lgn = new Login(driver);
-//		lgn.Logout();
+		Login lgn = new Login(driver);
+		lgn.Logout();
+
 
 	}
 }

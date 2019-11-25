@@ -33,7 +33,7 @@ public class Login {
 		// Click on Login button
 		driver.findElement(LoginButton).click();
 		Thread.sleep(2000);
-		System.out.println("User login sucessfully");
+		System.out.println("User login successfully");
 
 		// Settings class method calling
 		Settings settings = new Settings();
@@ -52,6 +52,10 @@ public class Login {
 
 		driver.findElement(By.xpath("//a[contains(text(),'Logout')]")).click();
 		System.out.println("Logout successfully");
+
+		Thread.sleep(1000);
+		driver.close();
+
 
 	}
 

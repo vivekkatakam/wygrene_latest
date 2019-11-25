@@ -11,8 +11,8 @@ public class LaunchUrl {
 
 	WebDriver driver;
 
-	String email = "ptggroup1500@gmail.com";
-	protected String psw = "Ptg@1234";
+	String email = "ptggroup1501@gmail.com";
+	protected String psw = "Welcome@123";
 
 	@Test
 	public void LaunchBrowser() throws Exception {
@@ -27,10 +27,6 @@ public class LaunchUrl {
 
 		Registration re = new Registration(driver);
 		re.regDetails(email, psw);
-
-//		Login login = new Login(driver);
-//		login.Loginpage(email,psw);
-
 
 	}
 
